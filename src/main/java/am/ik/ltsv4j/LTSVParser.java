@@ -25,7 +25,6 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -228,7 +227,7 @@ public class LTSVParser {
 			}
 			result.put(label, field);
 		}
-		return Collections.unmodifiableMap(result);
+		return result;
 	}
 
 	/**
